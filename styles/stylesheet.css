@@ -123,13 +123,19 @@ body {
 .sponsor-logos {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-
     margin: 100px auto;
     align-items: center;
     justify-items: center;
     padding: 42px 40px;
     border-top: 1px solid rgba(1, 8, 17, 0.1);
     border-bottom: 1px solid rgba(1, 8, 17, 0.1);
+}
+
+.sponsor-logo-sub-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 /* Popular Collection section */
@@ -149,13 +155,15 @@ body {
 }
 
 .card {
-    max-height: 480px;
-    max-width: 330px;
     padding: 17px 14px;
     border-radius: 5px;
     box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+.card-image {
+    width: 100%;
 }
 
 .card-title {
@@ -258,28 +266,54 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
 
+    /* Ensure flex layout and column direction */
     .navbar-section,
     .nav-elements,
     .banner-contents,
     .feature-products {
         flex-direction: column;
-    }
-
-    .nav-elements {
-        padding: 0;
-    }
-
-    .banner-left-content,
-    .primary-logo {
         text-align: center;
     }
 
-    /* popular-collections  */
+    .banner-contents {
+        margin-bottom: 30px;
+    }
+
+    /* Reduce margins for mobile view */
+    .banner-section {
+        margin: 100px 20px;
+    }
+
+    .banner-title {
+        font-size: 2.25rem;
+    }
+
+    .banner-detail {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .banner-right-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin: 0px 20px;
+    }
+
+    .img-back {
+        background-image: url('../images/Circle\ design.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Popular collection and sponsor logos grid change */
     .popular-collection-cards,
     .sponsor-logos {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .sponsor-logos {
@@ -287,8 +321,32 @@ footer {
         border: none;
     }
 
-    /* feature-products  */
+    .nav-elements {
+        padding: 0;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .primary-logo {
+        text-align: center;
+    }
+
+    /* Feature section image resizing */
+    .feature-products img {
+        width: 100%;
+        height: auto;
+    }
+
     .feature-products-left-side {
         text-align: center;
+        padding: 0 10px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .fav-footer-icon {
+        margin: 10px 10px 0 10px;
     }
 }
