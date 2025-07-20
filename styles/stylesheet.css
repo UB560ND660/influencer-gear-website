@@ -1,0 +1,152 @@
+/* poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* shared style */
+.display-flex {
+    display: flex;
+}
+
+.color-tone-1 {
+    color: #3A3A3A;
+}
+
+.color-pink-1 {
+    background-color: #E02C6D;
+}
+
+
+/* nav bar section */
+.navbar-section {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-elements {
+    gap: 34px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav-elements li {
+    list-style-type: none;
+}
+
+.nav-elements a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+.nav-icon {
+    font-size: 25px;
+}
+
+
+/* banner section */
+.banner-section {
+    margin: 40px 150px;
+}
+
+.banner-left-content {
+    max-width: 700px;
+}
+
+
+.banner-title {
+    font-size: 4.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-contents {
+    margin: 80px 0 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-back {
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.banner-right-content img {
+    height: 440px;
+}
+
+.btn-primary {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #ffff;
+    font-weight: bold;
+    border: none;
+}
+
+/* sponsor logos section */
+
+.sponsor-logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: center;
+    justify-items: center;
+    padding: 42px 40px;
+    border-top: 1px solid rgba(1, 8, 17, 0.1);
+    border-bottom: 1px solid rgba(1, 8, 17, 0.1);
+}
+
+@media screen and (max-width:576px) {
+
+    .primary-logo {
+        text-align: center;
+    }
+
+    .navbar-section,
+    .nav-elements {
+        flex-direction: column;
+    }
+
+    .nav-elements {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .banner-contents {
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .banner-right-content {
+        margin: 70px 0;
+    }
+
+
+    .btn-primary {
+        margin: 20px auto;
+        padding: 10px 54px;
+    }
+
+    /* sponsor section  */
+    .sponsor-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        align-items: center;
+        border: none;
+        margin: 50px auto;
+    }
+
+}
