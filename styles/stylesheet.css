@@ -260,70 +260,37 @@ footer {
 
 @media screen and (max-width:576px) {
 
-    .primary-logo {
-        text-align: center;
-        font-size: 30px;
-        width: 500px;
-    }
-
     .navbar-section,
-    .nav-elements {
-        flex-direction: column;
-    }
-
-    .nav-elements {
-        gap: 20px;
-        padding: 0;
-    }
-
-    .banner-contents {
-        flex-direction: column;
-        justify-items: center;
-        text-align: center;
-    }
-
-    .banner-right-content {
-        margin: 70px 0;
-    }
-
-
-    .btn-primary {
-        margin: 20px auto;
-        padding: 10px 54px;
-    }
-
-    /* sponsor section  */
-    .sponsor-logos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        align-items: center;
-        border: none;
-        margin-top: 50px;
-    }
-
-    /* popular section */
-    .popular-collection-cards {
-        grid-template-columns: repeat(1, 1fr);
-        margin: 50px 0;
-    }
-
-    .see-more-tag {
-        margin-top: 0px;
-        margin-right: 100px;
-    }
-
-    /* feature  */
+    .nav-elements,
+    .banner-contents,
     .feature-products {
         flex-direction: column;
     }
 
-    .feature-products-left-side {
-        margin: auto 20px;
+    .nav-elements {
+        padding: 0;
+    }
+
+    .banner-left-content,
+    .primary-logo {
         text-align: center;
     }
 
-    .footer-icon {
-        margin-right: 20px;
+    .banner-right-content {}
+
+    /* popular-collections  */
+    .popular-collection-cards,
+    .sponsor-logos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sponsor-logos {
+        gap: 40px;
+        border: none;
+    }
+
+    /* feature-products  */
+    .feature-products-left-side {
+        text-align: center;
     }
 }
